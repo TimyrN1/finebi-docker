@@ -46,8 +46,6 @@ products - товары
 
 sales - продажи
 
-## Управление
-bash
 # Запуск
 docker compose up -d
 
