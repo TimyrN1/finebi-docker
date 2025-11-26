@@ -53,7 +53,8 @@ docker compose logs -f
 
 # Пересборка
 docker compose build --no-cache
-##Проблемы и решения
+## Проблемы и решения
+
 Порт 5432 занят
 Остановите системный PostgreSQL: sudo systemctl stop postgresql
 
