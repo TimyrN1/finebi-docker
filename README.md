@@ -18,13 +18,14 @@ FineBI напрямую: http://localhost:37799/webroot/decision
 PostgreSQL: localhost:5432
 
 ## Структура проекта
-text
+
 finebi-docker/
 ├── db/init/           # SQL скрипты инициализации БД
 ├── nginx/conf/        # Конфигурация Nginx
 ├── docker-compose.yml # Оркестрация контейнеров
 ├── Dockerfile         # Образ FineBI
 └── README.md          # Документация
+
 ## Данные для подключения
 PostgreSQL
 Хост: postgres (внутри Docker) или localhost (снаружи)
@@ -47,6 +48,10 @@ products - товары
 sales - продажи
 
 # Запуск
+Запускаем setup скрипт
+./setup.sh
+
+Или вручную:
 docker compose up -d
 
 # Остановка
