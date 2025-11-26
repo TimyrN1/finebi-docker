@@ -1,0 +1,25 @@
+# Docker
+docker-compose.override.yml
+
+# Логи
+*.log
+logs/
+
+# Временные файлы
+*.tmp
+*.temp
+temp/
+
+# FineBI локальные файлы (не копируем в репо)
+finebi/
+!finebi/lib/postgresql-42.7.3.jar
+
+# Системные файлы
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
