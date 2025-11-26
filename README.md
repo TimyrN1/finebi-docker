@@ -9,20 +9,15 @@
 - **Nginx 1.25** - reverse proxy
 - **Docker Compose** - оркестрация контейнеров
 
-## Быстрый старт
 
-```bash
-git clone <repository>
-cd finebi-docker
-docker compose up -d
-Доступ
+##Доступ
 FineBI через Nginx: http://localhost
 
 FineBI напрямую: http://localhost:37799/webroot/decision
 
 PostgreSQL: localhost:5432
 
-Структура проекта
+##Структура проекта
 text
 finebi-docker/
 ├── db/init/           # SQL скрипты инициализации БД
@@ -30,7 +25,7 @@ finebi-docker/
 ├── docker-compose.yml # Оркестрация контейнеров
 ├── Dockerfile         # Образ FineBI
 └── README.md          # Документация
-Данные для подключения
+##Данные для подключения
 PostgreSQL
 Хост: postgres (внутри Docker) или localhost (снаружи)
 
@@ -40,9 +35,9 @@ PostgreSQL
 
 Пользователь: finebi_user
 
-Пароль: FineBI2024!
+Пароль: finebi_password
 
-Таблицы
+##Таблицы
 categories - категории товаров
 
 customers - клиенты
@@ -51,7 +46,7 @@ products - товары
 
 sales - продажи
 
-Управление
+##Управление
 bash
 # Запуск
 docker compose up -d
@@ -64,12 +59,10 @@ docker compose logs -f
 
 # Пересборка
 docker compose build --no-cache
-Проблемы и решения
+##Проблемы и решения
 Порт 5432 занят
 Остановите системный PostgreSQL: sudo systemctl stop postgresql
 
 Порт 80 занят
 Измените порт Nginx в docker-compose.yml на 8080:80
 
-Недостаточно места
-Очистите Docker: docker system prune -a -f
