@@ -10,14 +10,14 @@
 - **Docker Compose** - оркестрация контейнеров
 
 
-##Доступ
+## Доступ
 FineBI через Nginx: http://localhost
 
 FineBI напрямую: http://localhost:37799/webroot/decision
 
 PostgreSQL: localhost:5432
 
-##Структура проекта
+## Структура проекта
 text
 finebi-docker/
 ├── db/init/           # SQL скрипты инициализации БД
@@ -25,7 +25,7 @@ finebi-docker/
 ├── docker-compose.yml # Оркестрация контейнеров
 ├── Dockerfile         # Образ FineBI
 └── README.md          # Документация
-##Данные для подключения
+## Данные для подключения
 PostgreSQL
 Хост: postgres (внутри Docker) или localhost (снаружи)
 
@@ -37,7 +37,7 @@ PostgreSQL
 
 Пароль: finebi_password
 
-##Таблицы
+## Таблицы
 categories - категории товаров
 
 customers - клиенты
@@ -46,7 +46,7 @@ products - товары
 
 sales - продажи
 
-##Управление
+## Управление
 bash
 # Запуск
 docker compose up -d
