@@ -55,9 +55,6 @@ docker compose logs -f
 docker compose build --no-cache
 ## Проблемы и решения
 
-Порт 5432 занят
-Остановите системный PostgreSQL: sudo systemctl stop postgresql
-
 Порт 80 занят
 Измените порт Nginx в docker-compose.yml на 8080:80
 
