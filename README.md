@@ -20,11 +20,11 @@ PostgreSQL: localhost:5432
 ## Структура проекта
 
 finebi-docker/
-├── db/init/           # SQL скрипты инициализации БД
-├── nginx/conf/        # Конфигурация Nginx
-├── docker-compose.yml # Оркестрация контейнеров
-├── Dockerfile         # Образ FineBI
-└── README.md          # Документация
+├── db/init/           - SQL скрипты инициализации БД
+├── nginx/conf/        - Конфигурация Nginx
+├── docker-compose.yml  - Оркестрация контейнеров
+├── Dockerfile          - Образ FineBI
+└── README.md          - Документация
 
 ## Данные для подключения
 PostgreSQL
